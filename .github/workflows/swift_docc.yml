@@ -4,17 +4,14 @@ on:
   workflow_call:
     inputs:
       project_target:
+        required: true
         type: string
-        description: "Name of the project target."
-        default: "Default"
       hosting_path:
+        required: true
         type: string
-        description: "Name of the hosting path. ex) swift -> /swift/$tag"
-        default: "Default"
       token:
+        required: true
         type: string
-        decription: "Write Github Token"
-        default: ""
 
   release:
     types:
