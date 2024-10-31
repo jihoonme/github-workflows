@@ -9,9 +9,6 @@ on:
       hosting_path:
         required: true
         type: string
-      token:
-        required: true
-        type: string
 
   release:
     types:
@@ -83,7 +80,6 @@ jobs:
       - name: Publish documentation to GitHub Pages
         uses: JamesIves/github-pages-deploy-action@4.1.7
         with:
-          token: ${{ inputs.token }}
           branch: gh-pages
           folder: docs-out
           single-commit: true
