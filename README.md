@@ -26,7 +26,6 @@ jobs:
     with:
       project_target: "ProjectTargetName"
       hosting_path: "TargetPath"
-      token: "Github Token"
 ```
 
 ## License
