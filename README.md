@@ -20,12 +20,13 @@ on:
   workflow_dispatch:
 
 jobs:
-  docc:
-    name: Docc
-    uses: jihoonme/github-workflows/.github/workflows/swift_docc.yml@main
+  build-docs:
+    uses: ./.github/workflows/docc.yml
     with:
-      project_target: "ProjectTargetName"
-      hosting_path: "TargetPath"
+      project_target: MyLibrary
+      hosting_path: docs
+      xcode_version: "16.2"
+      macos_version: "macos-15"
 ```
 
 ## License
